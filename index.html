@@ -28,6 +28,7 @@
         </div>
 
         <div class="row mt-5">
+
             <div class="col-xl-8">
                 <div class="row">
                     <div class="col">
@@ -72,26 +73,6 @@
                             mistakes I made in the past.</p>
 
 
-                        <div id="eventbrite-widget-container-88154507505"></div>
-
-                        <script src="https://www.eventbrite.nl/static/widgets/eb_widgets.js"></script>
-
-                        <script type="text/javascript">
-                            var exampleCallback = function () {
-                                console.log('Order complete!');
-                            };
-
-                            window.EBWidgets.createWidget({
-                                // Required
-                                widgetType: 'checkout',
-                                eventId: '88154507505',
-                                iframeContainerId: 'eventbrite-widget-container-88154507505',
-
-                                // Optional
-                                iframeContainerHeight: 425,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
-                                onOrderComplete: exampleCallback  // Method called when an order has successfully completed
-                            });
-                        </script>
                     </div>
                 </div>
                 <hr>
@@ -121,6 +102,8 @@
                                 href="https://docs.google.com/document/d/1YQQ5xMdyUKv4eqa8saD_92waExwrZfUtnhMBXmZ6bD4/edit?usp=sharing"
                                 target="_blank" rel="nofollow noopener noreferrer">hier</a> in te zien</p>
                         <p><br></p>
+
+
                     </div>
                 </div>
             </div>
@@ -158,7 +141,35 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <div id="eventbrite-widget-container-88154507505"></div>
+
+                            <script src="https://www.eventbrite.nl/static/widgets/eb_widgets.js"></script>
+                            <script type="text/javascript">
+                                var exampleCallback = function () {
+                                    console.log('Order complete!');
+                                };
+
+                                window.EBWidgets.createWidget({
+                                    // Required
+                                    widgetType: 'checkout',
+                                    eventId: '88154507505',
+                                    iframeContainerId: 'eventbrite-widget-container-88154507505',
+
+                                    // Optional
+                                    iframeContainerHeight: 600,  // Widget height in pixels. Defaults to a minimum of 425px if not provided
+                                    onOrderComplete: exampleCallback  // Method called when an order has successfully completed
+                                });
+                            </script>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
